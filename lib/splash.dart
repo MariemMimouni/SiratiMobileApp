@@ -21,7 +21,7 @@ _navigateToHome() async{
   @override
   Widget build(BuildContext context) {
     return AnimatedSplashScreen(
-      duration: 6000,
+      duration: 10000,
       splash: Center(
         child: Column(
             children:[Image.asset(

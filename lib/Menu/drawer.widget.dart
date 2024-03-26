@@ -8,10 +8,10 @@ class MyDrawer extends StatelessWidget {
       child: ListView(
         children: [
           DrawerHeader(
-            decoration: BoxDecoration(
+            /*decoration: BoxDecoration(
                 gradient:
                 LinearGradient(begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,stops: [0.2, 1],colors: [Theme.of(context).colorScheme.primary, Colors.white])),
+                    end: Alignment.bottomCenter,stops: [0.2, 1],colors: [Theme.of(context).colorScheme.primary, Colors.white])),*/
             child: Container() ),
         ListTile(
           title: Text('Home',
@@ -75,6 +75,7 @@ class MyDrawer extends StatelessWidget {
               Navigator.pushNamed(context, "/awards");
             },
           ),
+          Divider(),
           ListTile(
             title: Text('Contact',
                 style: TextStyle(fontSize: 22)),

@@ -31,9 +31,9 @@ class MyApp extends StatelessWidget {
         home: Splash(),
     theme: ThemeData(
         scaffoldBackgroundColor: Color(0xFFF6F6F6),
-        colorScheme: ColorScheme.fromSeed (seedColor: Color(0xFFC1FF72),
-        secondary: Color(0xFF5CE1E6),
-           // primary: Color(0xFFC1FF72)
+        colorScheme: ColorScheme.fromSeed (seedColor: Color(0xFF5CE1E6),
+          secondary: Color(0xFFFFB100),
+          primary: Color(0xFF5CE1E6),
         )));
   }
 }
