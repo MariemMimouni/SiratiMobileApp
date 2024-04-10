@@ -12,7 +12,7 @@ class Volunteer extends StatelessWidget {
           elevation: 10,
           title: Text('سيرتي'),
         ),
-        body: Text('Volunteer')
+        body: Text('Coming soon')
     );
   }
 }

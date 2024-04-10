@@ -94,6 +94,17 @@ class MyDrawer extends StatelessWidget {
       ),
       Divider(),
       ListTile(
+        title: Text('CV', style: TextStyle(fontSize: 22)),
+        leading: Icon(
+          Icons.contact_page,
+          color: Theme.of(context).colorScheme.primary,
+        ),
+        onTap: () {
+          Navigator.pop(context);
+          Navigator.pushNamed(context, "/cv");
+        },
+      ),
+      ListTile(
         title: Text('Contact', style: TextStyle(fontSize: 22)),
         leading: Icon(
           Icons.phone,

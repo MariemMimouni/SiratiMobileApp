@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 
+
 import '../Menu/drawer.widget.dart';
 
 class Education extends StatelessWidget {
@@ -11,8 +12,9 @@ class Education extends StatelessWidget {
     return Scaffold(
         drawer: MyDrawer(),
         appBar: AppBar(
+          backgroundColor: Theme.of(context).colorScheme.primary,
           elevation: 10,
-          title: Text('SIRATI in Education'),
+          title: Text('Education'),
         ),
         body: Padding(
           padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 60.0),

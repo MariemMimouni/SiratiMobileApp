@@ -10,8 +10,9 @@ class Work extends StatelessWidget {
     return Scaffold(
         drawer: MyDrawer(),
         appBar: AppBar(
+          backgroundColor: Theme.of(context).colorScheme.primary,
           elevation: 10,
-          title: Text('SIRATI in Work'),
+          title: Text('Work Experience'),
         ),
         body: Padding(
           padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 60.0),

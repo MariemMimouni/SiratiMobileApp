@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sirati_app/Pages/awards.page.dart';
+import 'package:sirati_app/Pages/cv.page.dart';
 import 'package:sirati_app/Pages/education.page.dart';
 import 'package:sirati_app/Pages/home.page.dart';
 import 'package:sirati_app/Pages/projects.page.dart';
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
     '/volunteer':(context)=>Volunteer(),
     '/skills':(context)=>Skills(),
     '/awards':(context)=>Awards(),
+    '/cv':(context)=>CvPage(),
   };
   @override
   Widget build(BuildContext context) {
@@ -31,7 +33,7 @@ class MyApp extends StatelessWidget {
         home: Splash(),
     theme: ThemeData(
         scaffoldBackgroundColor: Color(0xFFF6F6F6),
-        colorScheme: ColorScheme.fromSeed (seedColor: Color(0xFF5CE1E6),
+        colorScheme: ColorScheme.fromSeed (seedColor: Color(0xFF29B8D0),
           background: Color(0xFFF6F6F6),
           secondary: Color(0xFFC1FF72),
           primary: Color(0xFF8ECAE6),

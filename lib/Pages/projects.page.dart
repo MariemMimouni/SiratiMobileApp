@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:sirati_app/Pages/awards.page.dart';
-import 'package:sirati_app/Pages/volunteer.page.dart';
-import 'package:sirati_app/Pages/work.page.dart';
+
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../Menu/drawer.widget.dart';
-import 'education.page.dart';
+
 class Projects extends StatelessWidget {
 final _controller = PageController();
   @override
@@ -13,14 +11,19 @@ final _controller = PageController();
     return Scaffold(
         drawer: MyDrawer(),
         appBar: AppBar(
+          backgroundColor: Theme.of(context).colorScheme.primary,
           elevation: 10,
-          title: Text('سيرتي'),
+          title: Text('Projects'),
         ),
         body:  Column(
           mainAxisAlignment: MainAxisAlignment.center,
               children: [
+              /*  Container(
+                  height: 250,
+                  child: Image.asset('images/Work.png'),
+                ),*/
                 SizedBox(
-                  height: 400,
+                  height: 600,
                   child: PageView(
                     controller: _controller,
                     children: [
