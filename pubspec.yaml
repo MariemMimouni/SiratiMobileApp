@@ -37,6 +37,9 @@ dependencies:
   syncfusion_flutter_pdfviewer: ^25.1.39
   google_fonts: ^6.2.1
   color: ^3.0.0
+  flutter_downloader: ^1.11.7
+  hidden_drawer_menu: ^3.0.1
+  provider:
 
 
 

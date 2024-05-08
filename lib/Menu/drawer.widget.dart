@@ -1,10 +1,20 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
-class MyDrawer extends StatelessWidget {
+import '../Theme/theme_provider.dart';
+
+class MyDrawer extends StatefulWidget {
   const MyDrawer({super.key});
 
   @override
+  State<MyDrawer> createState() => _MyDrawerState();
+}
+
+class _MyDrawerState extends State<MyDrawer> {
+  @override
   Widget build(BuildContext context) {
+    bool mode = true;
     return Drawer(
         child: ListView(children: [
       DrawerHeader(
@@ -14,7 +24,8 @@ class MyDrawer extends StatelessWidget {
                 LinearGradient(begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,stops: [0.2, 1],colors: [Theme.of(context).colorScheme.primary, Colors.white]),*/
           ),
-          child: Container(child: Image.asset('images/SiratiLogo1.png'))),
+          child: Container(child: Image.asset('images/SiratiLogo1.png')),
+          ),
       ListTile(
         title: Text('Home', style: TextStyle(fontSize: 22)),
         leading: Icon(
@@ -57,17 +68,6 @@ class MyDrawer extends StatelessWidget {
         onTap: () {
           Navigator.pop(context);
           Navigator.pushNamed(context, "/projects");
-        },
-      ),
-      ListTile(
-        title: Text('Volunteer', style: TextStyle(fontSize: 22)),
-        leading: Icon(
-          Icons.volunteer_activism,
-          color: Theme.of(context).colorScheme.primary,
-        ),
-        onTap: () {
-          Navigator.pop(context);
-          Navigator.pushNamed(context, "/volunteer");
         },
       ),
       ListTile(
