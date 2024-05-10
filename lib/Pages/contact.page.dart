@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:like_button/like_button.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../Menu/drawer.widget.dart';
 class Contact extends StatelessWidget {
@@ -13,7 +14,7 @@ class Contact extends StatelessWidget {
           title: Text('Contact'),
         ),
         body: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
@@ -47,7 +48,7 @@ class Contact extends StatelessWidget {
                     ),
                   ]),
             ),
-            SizedBox(height: 50),
+            SizedBox(height: 40),
             Column(
             children: [
             Container(
@@ -109,7 +110,10 @@ class Contact extends StatelessWidget {
                     Text('Send a E-mail!', style: TextStyle(color: Theme.of(context).colorScheme.onBackground),)],
                 ),
               ),
-            )])
+            )]),
+            SizedBox(height: 20),
+
+            LikeButton(size: 50,)
           ],
         )
     );

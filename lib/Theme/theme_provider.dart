@@ -15,7 +15,7 @@ class ThemeProvider with ChangeNotifier {
     if (_themeData == lightMode) {
       themeData = darkMode;
     } else {
-      _themeData = lightMode;
+      themeData = lightMode;
     }
   }
 }

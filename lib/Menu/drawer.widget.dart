@@ -26,7 +26,8 @@ class _MyDrawerState extends State<MyDrawer> {
           ),
           child: Container(child: Image.asset('images/SiratiLogo1.png')),
           ),
-      ListTile(
+
+          ListTile(
         title: Text('Home', style: TextStyle(fontSize: 22)),
         leading: Icon(
           Icons.home,
@@ -115,6 +116,24 @@ class _MyDrawerState extends State<MyDrawer> {
           Navigator.pushNamed(context, "/contact");
         },
       ),
+          Divider(),
+
+          ListTile(
+            title: Text(
+              'Toggle Theme',
+              style: TextStyle(fontSize: 22),
+            ),
+            leading: Icon(
+              Icons.brightness_6, // Icon for theme toggle
+              color: Theme.of(context).colorScheme.primary,
+            ),
+            onTap: () {
+              setState(() {
+                Provider.of<ThemeProvider>(context, listen: false).toggleTheme() ;
+              });
+              Navigator.pop(context);
+            },
+          ),
     ]));
   }
 }
